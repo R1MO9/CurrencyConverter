@@ -71,6 +71,12 @@
     <input type="submit" value="Convert">
   </form>
 
-  <h2><%= locals.value %></h2>
+  <% if(locals.value){ %>
+  <h2>Converted Ammount is: <%= locals.value %></h2>
+  <% } else {%>
+  <h2>Enter the Currency details...</h2>
+  <% } %>
+
+
 </div>
 <%- include("partials/footer.html") %>
