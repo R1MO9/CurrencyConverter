@@ -1,43 +1,80 @@
-/* Apply styles to the form container */
-div {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
 }
 
-/* Style the form labels */
+/* Header styles */
+div {
+    text-align: center;
+    background-color: #3498db;
+    padding: 20px;
+    color: white;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+/* Form container */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    flex: 1;
+    margin-right: 10px;
+}
+
 label {
     font-weight: bold;
 }
 
-/* Style the select boxes */
-select {
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 10px;
-}
-
-/* Style the input field */
+.form-select,
 input[type="number"] {
     width: 100%;
-    padding: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     margin-bottom: 10px;
 }
 
-/* Style the submit button */
 input[type="submit"] {
-    background-color: #007BFF;
+    background-color: #3498db;
     color: white;
-    padding: 10px 20px;
+    padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-weight: bold;
 }
 
-/* Style the h2 element where the result will be displayed */
+/* Result styles */
 h2 {
     margin-top: 20px;
     font-size: 24px;
-    color: #333;
+}
+
+/* Footer styles */
+h5 {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
 }
