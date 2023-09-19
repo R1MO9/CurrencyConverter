@@ -1,71 +1,77 @@
 <%- include(header.html) %>
-<div>
-  <select name="type" class="form-select">
-    <option value="" data-display="Select">Currency</option>
-    <option value="AED">United Arab Emirates</option>
-    <option value="AFN">Afghanistan</option>
-    <option value="AWG">Dutch Guilders</option>
-    <option value="AMD">Armenia</option>
-    <option value="ANG">Netherlands</option>
-    <option value="AOA">Angola</option>
-    <option value="ARS">Argentina</option>
-    <option value="AUD">Australia</option>
-    <option value="BRL">Brazil</option>
-    <option value="CAD">Canada</option>
-    <option value="CNY">China</option>
-    <option value="EGP">Egypt</option>
-    <option value="FJD">Fiji</option>
-    <option value="GHS">Ghana</option>
-    <option value="INR">India</option>
-    <option value="JPY">Japan</option>
-    <option value="KRW">South Korea</option>
-    <option value="MXN">Mexico</option>
-    <option value="NZD">New Zealand</option>
-    <option value="PHP">Philippines</option>
-    <option value="RUB">Russia</option>
-    <option value="ZAR">South Africa</option>
-    <option value="CHF">Switzerland</option>
-    <option value="TRY">Turkey</option>
-    <option value="GBP">United Kingdom</option>
-    <option value="USD">United States</option>
-  </select>
 
-  <select name="type" class="form-select">
-    <option value="" data-display="Select">Currency</option>
-    <option value="AED">United Arab Emirates</option>
-    <option value="AFN">Afghanistan</option>
-    <option value="AWG">Dutch Guilders</option>
-    <option value="AMD">Armenia</option>
-    <option value="ANG">Netherlands</option>
-    <option value="AOA">Angola</option>
-    <option value="ARS">Argentina</option>
-    <option value="AUD">Australia</option>
-    <option value="BRL">Brazil</option>
-    <option value="CAD">Canada</option>
-    <option value="CNY">China</option>
-    <option value="EGP">Egypt</option>
-    <option value="FJD">Fiji</option>
-    <option value="GHS">Ghana</option>
-    <option value="INR">India</option>
-    <option value="JPY">Japan</option>
-    <option value="KRW">South Korea</option>
-    <option value="MXN">Mexico</option>
-    <option value="NZD">New Zealand</option>
-    <option value="PHP">Philippines</option>
-    <option value="RUB">Russia</option>
-    <option value="ZAR">South Africa</option>
-    <option value="CHF">Switzerland</option>
-    <option value="TRY">Turkey</option>
-    <option value="GBP">United Kingdom</option>
-    <option value="USD">United States</option>
-  </select>
-  
-      
-      <form>
-        <label for="ammount">Ammount</label><br>
-        <input type="number" id="ammount" name="ammount"><br>
-        <input type="submit" value="Submit">
-      </form>
-      <%= amount %>
+<div>
+  <form method="POST">
+    <label for="country1">Select Currency 1:</label>
+    <select name="country1" class="form-select">
+      <!-- Options for currency 1 -->
+      <option value="" data-display="Select">Currency</option>
+      <option value="AED">United Arab Emirates</option>
+      <option value="AFN">Afghanistan</option>
+      <option value="AWG">Dutch Guilders</option>
+      <option value="AMD">Armenia</option>
+      <option value="ANG">Netherlands</option>
+      <option value="AOA">Angola</option>
+      <option value="ARS">Argentina</option>
+      <option value="AUD">Australia</option>
+      <option value="BRL">Brazil</option>
+      <option value="CAD">Canada</option>
+      <option value="CNY">China</option>
+      <option value="EGP">Egypt</option>
+      <option value="FJD">Fiji</option>
+      <option value="GHS">Ghana</option>
+      <option value="INR">India</option>
+      <option value="JPY">Japan</option>
+      <option value="KRW">South Korea</option>
+      <option value="MXN">Mexico</option>
+      <option value="NZD">New Zealand</option>
+      <option value="PHP">Philippines</option>
+      <option value="RUB">Russia</option>
+      <option value="ZAR">South Africa</option>
+      <option value="CHF">Switzerland</option>
+      <option value="TRY">Turkey</option>
+      <option value="GBP">United Kingdom</option>
+      <option value="USD">United States</option>
+    </select>
+
+    <label for="country2">Select Currency 2:</label>
+    <select name="country2" class="form-select">
+      <!-- Options for currency 2 -->
+      <option value="" data-display="Select">Currency</option>
+      <option value="AED">United Arab Emirates</option>
+      <option value="AFN">Afghanistan</option>
+      <option value="AWG">Dutch Guilders</option>
+      <option value="AMD">Armenia</option>
+      <option value="ANG">Netherlands</option>
+      <option value="AOA">Angola</option>
+      <option value="ARS">Argentina</option>
+      <option value="AUD">Australia</option>
+      <option value="BRL">Brazil</option>
+      <option value="CAD">Canada</option>
+      <option value="CNY">China</option>
+      <option value="EGP">Egypt</option>
+      <option value="FJD">Fiji</option>
+      <option value="GHS">Ghana</option>
+      <option value="INR">India</option>
+      <option value="JPY">Japan</option>
+      <option value="KRW">South Korea</option>
+      <option value="MXN">Mexico</option>
+      <option value="NZD">New Zealand</option>
+      <option value="PHP">Philippines</option>
+      <option value="RUB">Russia</option>
+      <option value="ZAR">South Africa</option>
+      <option value="CHF">Switzerland</option>
+      <option value="TRY">Turkey</option>
+      <option value="GBP">United Kingdom</option>
+      <option value="USD">United States</option>
+    </select>
+
+    <label for="amount">Amount:</label>
+    <input type="number" id="amount" name="amount"><br>
+
+    <input type="submit" value="Convert">
+  </form>
+
+  <h2><%= locals.value %></h2>
 </div>
 <%- include(footer.html) %>
