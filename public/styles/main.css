@@ -1,3 +1,43 @@
-body{
-    background-color: black;
+/* Apply styles to the form container */
+div {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the form labels */
+label {
+    font-weight: bold;
+}
+
+/* Style the select boxes */
+select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+/* Style the input field */
+input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style the h2 element where the result will be displayed */
+h2 {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
 }

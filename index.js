@@ -47,7 +47,7 @@ app.post("/", async (req, res) => {
     });
     const result = response.data;
     console.log(result);
-    res.render("index.ejs", { value: result.value });
+    res.render("index.ejs", { value: result });
   } catch (error) {
     console.error("Failed to make request:", error.message);
     res.render("index.ejs", {
